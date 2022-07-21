@@ -11,12 +11,13 @@ PEERS="1980aae3f107b514b74495765e66e1b70d10121d@194.163.128.89:12656,5d35bc7c3f3
 
 
 
-
+```
 sed -i "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/;" $HOME/.sei/config/config.toml
+```
 
-
-
+```
 systemctl restart seid
-
-
+```
+```
 journalctl -fu seid -o cat
+```
